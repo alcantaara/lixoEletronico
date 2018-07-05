@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_lixo"
+            android:icon="@mipmap/ic_menu_lixo"
+            android:title="Lixo Eletrônico" />
+        <item
+            android:id="@+id/nav_informacoes"
+            android:icon="@drawable/ic_menu_informacoes"
+            android:title="Mais informaçoes" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_faleconosco"
+            android:title="Fale Conosco" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_configuracao"
+            android:title="Configurações" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_sair"
+            android:title="Sair" />
+    </group>
+
+</menu>

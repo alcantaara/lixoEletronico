@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.lixoeletronico.lixoeletronico.Cadastro1Activity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:id="@+id/linearCad1">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:textColor="@color/fundo"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/cadastroNome"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/linearCad1"
+            android:id="@+id/linearCad2">
+
+            <TextView
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:text="CPF:"
+                android:textColor="@color/fundo"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/cadastroCpf"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="20sp"
+                android:layout_below="@+id/cadastroNome"
+                android:layout_alignLeft="@+id/cadastroNome"
+                android:layout_alignStart="@+id/cadastroNome" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/linearCad2"
+            android:id="@+id/linearCad3">
+
+            <TextView
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textColor="@color/fundo"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/cadastroEmail"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/linearCad3"
+            android:id="@+id/linearCad4">
+
+            <TextView
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:text="Senha:"
+                android:textColor="@color/fundo"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/cadastroSenha"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/linearCad4"
+            android:id="@+id/linearCad5">
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/linearCad5"
+                android:id="@+id/linearCad6">
+
+
+            <Button
+                android:id="@+id/cadastroContinuar"
+                android:layout_width="210dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:background="@color/fundo"
+                android:text="Cadastrar"
+                android:textColor="@color/branco"
+                android:layout_marginBottom="25dp"
+                android:onClick="onClick"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

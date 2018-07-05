@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#10525d</color>
+    <color name="colorPrimaryDark">#88898c</color>
+    <color name="colorAccent">#aee985</color>
+    <color name="colorButtonCriarConta">#fafafa</color>
+    <color name="menu_palavras">#3c818b</color>
+    <color name="fundo">#FF0E515C</color>
+    <color name="branco">#ffffff</color>
+    <color name="cinza">#898a8d</color>
+    <color name="branco_barra">#d9e3e4</color>
+
+</resources>

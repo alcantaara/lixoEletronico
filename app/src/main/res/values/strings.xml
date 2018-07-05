@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Lixo Eletrônico</string>
+
+
+    <string-array name="estado">
+        <item>MG</item>
+    </string-array>
+
+
+    <string-array name="cidade">
+        <item>Lavras</item>
+    </string-array>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_memu1">Bem-vindo!</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_locais">Pontos de Coleta</string>
+    <string name="title_activity_mapa">Pontos de Coleta</string>
+    <string name="title_activity_menu">Lixo Eletrônico</string>
+    <string name="title_activity_perfil">Minhas doaçoes</string>
+    <string name="title_activity_agenda">Agendamento</string>
+
+    <string-array name="horario">
+        <item>7:00 - 11:00 </item>
+        <item>11:00 - 14:00 </item>
+        <item>15:00 - 18:00 </item>
+    </string-array>
+
+    <string-array name="categoria">
+        <item>Aparelhos</item>
+        <item>Peças de Aparelhos</item>
+        <item>Outros</item>
+    </string-array>
+
+    <string-array name="array_aparelhos">
+        <item>Computador</item>
+        <item>Notebook</item>
+        <item>Netbook</item>
+        <item>Celular</item>
+        <item>Tablet</item>
+    </string-array>
+
+    <string-array name="array_pecas">
+        <item>Placa Mãe</item>
+        <item>Memória RAM</item>
+        <item>HD</item>
+        <item>Monitor</item>
+        <item>CPU</item>
+        <item>Bateria</item>
+        <item>Display</item>
+    </string-array>
+
+    <string-array name="array_outros">
+        <item>TV</item>
+        <item>Impressora</item>
+        <item>Projetor</item>
+    </string-array>
+
+    <string name="inf_lixoeltronico"> O lixo eletrônico tem se tornado um grande problema ambiental quando não descartado em locais adequados.
+</string>
+
+    <string name="inf_title1">Exemplos de lixo eletrônico:</string>
+    <string name="inf_title2">Problemas Causados:</string>
+    <string name="inf_title3">Proposta do Aplicativo:</string>
+
+    <string name="inf_text1_1">- Aparelhos Eletrônicos (Computadores, Notebooks, Tablets, Smartphones).</string>
+    <string name="inf_text1_2">- Peças de Aparelhos(Monitores, CPUs, Placa Mãe, Baterias, Memória RAM, etc).</string>
+    <string name="inf_text1_3">- Outros(Impressoras, TVs, Projetores).</string>
+
+    <string name="inf_text2"> Estes equipamentos possuem substâncias químicas (chumbo, cádmio, mercúrio,etc) em suas composições podendo provocar contaminação de solo e água, além de provocarem doenças em pessoas que coletam esses aparelhos sem os devidos conhecimentos.</string>
+
+    <string name="inf_text2_1">Visualizar pontos de coleta e a menor rota para chegar a este ponto.</string>
+    <string name="inf_text2_2">Agendar uma coleta sem sair de casa.</string>
+    <string name="inf_text2_3">Ganhe pontos em cada coleta.</string>
+
+
+    <string name="title_activity_moedas">Minhas Moedas</string>
+    <string name="title_activity_endereco">Agendamento</string>
+    <string name="title_activity_aparelhos">Agendamento</string>
+    <string name="title_activity_agendamento">Agendamento</string>
+</resources>

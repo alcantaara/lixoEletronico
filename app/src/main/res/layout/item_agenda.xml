@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="80dp"
+        android:id="@+id/item_foto"
+        android:background="@drawable/ic_agenda_foto"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/item_subCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:text="Objeto"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/item_data"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="12/11/2018"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:gravity="right">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/item_quantidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="56dp"
+                android:text="qtd"
+                android:gravity="center_vertical"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.lixoeletronico.lixoeletronico.EnderecoActivity"
+    tools:showIn="@layout/app_bar_endereco">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:id="@+id/linearCad7">
+
+            <TextView
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:text="Endereço:"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/agenda_endereco"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:id="@+id/linearCad8"
+            android:layout_below="@+id/linearCad7">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Número:"
+                android:textSize="20sp"
+                android:layout_marginRight="25dp"/>
+
+            <TextView
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:text="Complemento:"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="@+id/linearCad9"
+            android:layout_below="@+id/linearCad8">
+
+            <EditText
+                android:id="@+id/agenda_numero"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"/>
+
+            <EditText
+                android:id="@+id/agenda_complemento"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:id="@+id/linearCad10"
+            android:layout_below="@+id/linearCad9">
+
+            <TextView
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:text="Bairro:"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/agenda_bairro"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/linearCad11"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/linearCad10">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:text="Cidade:"
+                android:textSize="20sp"
+                android:layout_marginRight="25dp"/>
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Estado:"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/linearCad12"
+            android:layout_below="@+id/linearCad11">
+
+            <Spinner
+                android:id="@+id/spCidade"
+                android:layout_width="181dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="25dp" />
+
+
+            <Spinner
+                android:id="@+id/spEstado"
+                android:layout_width="125dp"
+                android:layout_height="28dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/linearCad12"
+            android:id="@+id/linearCad13">
+
+            <Button
+                android:id="@+id/agenda_seguir"
+                android:layout_width="210dp"
+                android:layout_height="35dp"
+                android:textSize="20sp"
+                android:background="@color/fundo"
+                android:text="Continuar"
+                android:textColor="@color/branco"
+                android:layout_marginBottom="25dp"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
+
+
