@@ -24,88 +24,125 @@
             android:gravity="center">
 
             <TextView
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mais_title"
+                android:textSize="24sp"
+                android:textColor="@color/fundo"/>
+
+            <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:typeface="sans"
-            android:text="@string/inf_lixoeltronico"
+            android:text="Projeto Eco-Eletro"
+            android:layout_marginBottom="8dp"
             android:textSize="18sp"/>
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/link1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:clickable="true"
+                android:text="http://www.institutogea.org.br/projetos/projeto-eco-eletro-seguranca-renda-2/"
+                android:textSize="18sp"
+                android:textColorLink="@color/link"/>
 
-        <TextView
-            android:layout_marginTop="16dp"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:layout_marginTop="18dp"
+                android:text="Projeto Descarte Legal"
+                android:layout_marginBottom="8dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/link2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:clickable="true"
+                android:text="http://www.institutogea.org.br/projetos/projeto-descarte-legal-caixa/"
+                android:textColorLink="@color/link"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notícias:"
+                android:textSize="24sp"
+                android:textColor="@color/fundo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:layout_marginTop="18dp"
+                android:text="Ponto de coleta"
+                android:layout_marginBottom="8dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/link5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:clickable="true"
+                android:text="http://lavras.tv/site/2017/11/07/uaitec-de-lavras-tem-ponto-de-coleta-de-produtos-eletronicos-sem-uso/"
+                android:textSize="18sp"
+                android:textColorLink="@color/link"/>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cooperativas: "
+                android:textSize="24sp"
+                android:textColor="@color/fundo"/>
+
+            <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/inf_title1"
-            android:textSize="20sp"
-            android:textColor="@color/fundo"/>
-
-        <TextView
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/inf_text1_1"
+            android:typeface="sans"
+            android:layout_marginTop="18dp"
+            android:text="Coopermiti"
+            android:layout_marginBottom="8dp"
             android:textSize="18sp"/>
 
-        <TextView
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/inf_text1_2"
-            android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/link3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:clickable="true"
+                android:text="http://www.coopermiti.com.br/Default.aspx"
+                android:textColorLink="@color/link"
+                android:textSize="18sp"/>
 
-        <TextView
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/inf_text1_3"
-            android:textSize="18sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:layout_marginTop="18dp"
+                android:text="Ecobraz"
+                android:layout_marginBottom="8dp"
+                android:textSize="18sp"/>
 
-        <TextView
-            android:layout_marginTop="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/inf_title2"
-            android:textSize="20sp"
-            android:textColor="@color/fundo"/>
-
-        <TextView
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/inf_text2"
-            android:textSize="18sp"/>
-
-        <TextView
-            android:layout_marginTop="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/inf_title3"
-            android:textSize="20sp"
-            android:textColor="@color/fundo"/>
-
-        <TextView
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/inf_text2_1"
-            android:textSize="18sp"/>
-
-        <TextView
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/inf_text2_2"
-            android:textSize="18sp"/>
-
-        <TextView
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/inf_text2_3"
-            android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/link4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:clickable="true"
+                android:textColorLink="@color/link"
+                android:text="https://www.ecobraz.org.br/"
+                android:textSize="18sp"/>
 
 
+
+            </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

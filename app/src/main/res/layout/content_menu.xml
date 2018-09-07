@@ -21,7 +21,7 @@
 
     <GridLayout
         android:id="@+id/menu_grid"
-        android:layout_weight="9"
+        android:layout_weight="8"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:columnCount="2"
@@ -34,7 +34,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
@@ -73,7 +73,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"

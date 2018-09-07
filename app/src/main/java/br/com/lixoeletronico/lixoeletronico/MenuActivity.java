@@ -14,28 +14,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.GridLayout;
-import android.widget.Toast;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
 import br.com.lixoeletronico.lixoeletronico.dao.UsuarioDAO;
 import br.com.lixoeletronico.lixoeletronico.modelo.Usuario;
-import retrofit.Callback;
-import retrofit.RestAdapter;
-import retrofit.RetrofitError;
-import retrofit.client.Response;
-
-import static android.R.attr.id;
 
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    public String id_aux;
+    private String id = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,18 +33,13 @@ public class MenuActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       /* UsuarioDAO dao = new UsuarioDAO(MenuActivity.this);
+        UsuarioDAO dao = new UsuarioDAO(MenuActivity.this);
         Usuario usuario = new Usuario();
         id = dao.buscaID(usuario.getEmail());
-        dao.close();*/
+        dao.close();
+
 
         //Realizada a chamada do menu lateral
-
-        /*Intent j = getIntent();
-        final String email = j.getStringExtra("email");
-        final String senha = j.getStringExtra("senha");*/
-        Usuario usuario = new Usuario();
-        pegaid(usuario.getEmail(),usuario.getSenha());
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -80,10 +61,10 @@ public class MenuActivity extends AppCompatActivity
                     @Override
                     public void onClick(View view) {
 
-                        Log.d("mostraid", id_aux);
+                        Log.d("mostraid", id);
 
                         Intent verPerfil = new Intent(MenuActivity.this, PerfilActivity.class);
-                        verPerfil.putExtra("id", id_aux);
+                        verPerfil.putExtra("id", id);
                         startActivity(verPerfil);
 
                     }
@@ -105,8 +86,10 @@ public class MenuActivity extends AppCompatActivity
                     @Override
                     public void onClick(View view) {
 
+                        Log.d("mostraid", id);
+
                         Intent verPerfil = new Intent(MenuActivity.this, EnderecoActivity.class);
-                        verPerfil.putExtra("id", id_aux);
+                        verPerfil.putExtra("id", id);
                         startActivity(verPerfil);
 
                     }
@@ -183,75 +166,5 @@ public class MenuActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    public void pegaid(String email, String senha){
-        //Here we will handle the http request to insert user to mysql db
-        //Here we will handle the http request to insert user to mysql db
-        //Creating a RestAdapter
-        BancoIP ip = new BancoIP();
-        final String ROOT_URL  = ip.getIp();
-        RestAdapter adapter = new RestAdapter.Builder()
-                .setEndpoint(ROOT_URL) //Setting the Root URL
-                .build(); //Finally building the adapter
-
-        //Creating object for our interface
-        RegistroAPI api = adapter.create(RegistroAPI.class);
-
-        //Defining the method insertuser of our interface
-        api.buscaid(
-
-                //Passing the values by getting it from editTexts
-                email,
-                senha,
-
-                //Creating an anonymous callback
-                new Callback<Response>() {
-                    @Override
-                    public void success(Response result , Response response) {
-                        //On success we will read the server's output using bufferedreader
-                        //Creating a bufferedreader object
-                        BufferedReader reader = null;
-
-                        //An string to store output from the server
-                        String output = "";
-
-                        try {
-                            //Initializing buffered reader
-                            reader = new BufferedReader(new InputStreamReader(result.getBody().in()));
-
-
-
-                            //Reading the output in the string
-                            output = reader.readLine();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                        JSONObject obj = null;
-                        try {
-                            obj = new JSONObject(output);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                        try {
-                            final String id = obj.getString("id");
-                            id_aux = id;
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                        //Toast.makeText(MenuActivity.this, id_aux,Toast.LENGTH_LONG).show();
-
-                    }
-
-
-
-                    @Override
-                    public void failure(RetrofitError error) {
-
-                    }
-                }
-        );
-
-
     }
 }

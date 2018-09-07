@@ -24,10 +24,35 @@
             android:gravity="center">
 
             <TextView
+                android:layout_marginBottom="16dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inf_title1"
+                android:textSize="24sp"
+                android:textColor="@color/fundo"/>
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:typeface="sans"
                 android:text="@string/inf_lixoeltronico"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:layout_marginTop="18dp"
+                android:text="@string/texto1"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:layout_marginTop="12dp"
+                android:text="@string/texto2"
                 android:textSize="18sp"/>
 
         </LinearLayout>
@@ -36,7 +61,7 @@
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/inf_title1"
+            android:text="@string/inf_title2"
             android:textSize="20sp"
             android:textColor="@color/fundo"/>
 
@@ -59,21 +84,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/inf_text1_3"
-            android:textSize="18sp"/>
-
-        <TextView
-            android:layout_marginTop="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/inf_title2"
-            android:textSize="20sp"
-            android:textColor="@color/fundo"/>
-
-        <TextView
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/inf_text2"
             android:textSize="18sp"/>
 
         <TextView

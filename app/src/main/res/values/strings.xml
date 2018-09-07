@@ -60,18 +60,28 @@
         <item>Projetor</item>
     </string-array>
 
-    <string name="inf_lixoeltronico"> O lixo eletrônico tem se tornado um grande problema ambiental quando não descartado em locais adequados.
+    <string name="inf_lixoeltronico"> Lixo Eletrônico é todo resíduo proveniente do descarte de equipamentos eletrônicos.
 </string>
 
-    <string name="inf_title1">Exemplos de lixo eletrônico:</string>
-    <string name="inf_title2">Problemas Causados:</string>
+    <string name="texto1">Quando descartado em locais inadequados, tais resíduos causam um impacto ambiental muito grande, pois
+possuem em sua composição  elementos altamente tóxicos como mercúrio, cádmio, berílio e chumbo, que prejudicam o meio ambiente contaminando não apenas as pessoas
+que realizam o manuseio de tais materiais sem os devidos conhecimentos de reciclagem,
+como também solo, água e consequentemente as plantas, os animais e as pessoas.
+    </string>
+
+    <string name="texto2">Portanto, o ideal é que equipamentos eletrônicos sejam coletados e tratados de forma correta, e com os devidos
+conhecimentos para manuzear esse tipo de material. Além disso, o reaproveitamento ou reciclagem desses equipamentos
+iria reduzir a produção de lixo eletrônico e de novos equipamentos.
+    </string>
+
+    <string name="inf_title1"> Lixo Eletrônico </string>
+    <string name="inf_title2">Exemplos de lixo eletrônico:</string>
     <string name="inf_title3">Proposta do Aplicativo:</string>
 
     <string name="inf_text1_1">- Aparelhos Eletrônicos (Computadores, Notebooks, Tablets, Smartphones).</string>
     <string name="inf_text1_2">- Peças de Aparelhos(Monitores, CPUs, Placa Mãe, Baterias, Memória RAM, etc).</string>
     <string name="inf_text1_3">- Outros(Impressoras, TVs, Projetores).</string>
 
-    <string name="inf_text2"> Estes equipamentos possuem substâncias químicas (chumbo, cádmio, mercúrio,etc) em suas composições podendo provocar contaminação de solo e água, além de provocarem doenças em pessoas que coletam esses aparelhos sem os devidos conhecimentos.</string>
 
     <string name="inf_text2_1">Visualizar pontos de coleta e a menor rota para chegar a este ponto.</string>
     <string name="inf_text2_2">Agendar uma coleta sem sair de casa.</string>
@@ -82,4 +92,12 @@
     <string name="title_activity_endereco">Agendamento</string>
     <string name="title_activity_aparelhos">Agendamento</string>
     <string name="title_activity_agendamento">Agendamento</string>
+
+
+    <string name="mais_title"> Projetos já existentes:</string>
+
+
+
+
+
 </resources>

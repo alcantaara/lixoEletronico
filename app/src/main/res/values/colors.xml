@@ -9,5 +9,6 @@
     <color name="branco">#ffffff</color>
     <color name="cinza">#898a8d</color>
     <color name="branco_barra">#d9e3e4</color>
+    <color name="link">#2828c2</color>
 
 </resources>

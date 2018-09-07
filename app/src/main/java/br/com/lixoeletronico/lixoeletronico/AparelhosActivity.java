@@ -25,30 +25,20 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.lang.reflect.Array;
 
 import br.com.lixoeletronico.lixoeletronico.dao.UsuarioDAO;
 import br.com.lixoeletronico.lixoeletronico.modelo.Agenda;
-import retrofit.Callback;
-import retrofit.RestAdapter;
-import retrofit.RetrofitError;
-import retrofit.client.Response;
-import retrofit.http.Field;
 
 public class AparelhosActivity extends AppCompatActivity
-        implements AdapterView.OnItemSelectedListener  {
+        implements AdapterView.OnItemSelectedListener {
 
     public static final int REQUEST_CODE = 1;
     private Spinner spCategoria;
     private Spinner spSubCategoria;
-    public String caminhoFoto, subCategoria, qtd;
+    private String caminhoFoto, subCategoria, qtd = null;
     private AgendarHelper helper;
-    private Button agendar;
-    private EditText quantidade;
 
 
 
@@ -63,8 +53,6 @@ public class AparelhosActivity extends AppCompatActivity
 
         spCategoria = (Spinner) findViewById(R.id.spCategoria);
         spSubCategoria = (Spinner) findViewById(R.id.spSubCategoria);
-        quantidade = (EditText) findViewById(R.id.agenda_quantidade);
-
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.categoria,android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -113,7 +101,7 @@ public class AparelhosActivity extends AppCompatActivity
         botaoConcluir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                qtd = quantidade.getText().toString();
+
                 Intent i = getIntent();
                 String endereco = i.getStringExtra("endereco");
                 String numero = i.getStringExtra("numero");
@@ -122,81 +110,11 @@ public class AparelhosActivity extends AppCompatActivity
                 String data = i.getStringExtra("data");
                 String hora = i.getStringExtra("hora");
                 String id = i.getStringExtra("id");
-                String id_usuario = id;
-                String numerocasa = numero;
-
-                //Here we will handle the http request to insert user to mysql db
-                //Here we will handle the http request to insert user to mysql db
-                //Creating a RestAdapter
-                BancoIP ip = new BancoIP();
-                final String ROOT_URL  = ip.getIp();
-                RestAdapter adapter = new RestAdapter.Builder()
-                        .setEndpoint(ROOT_URL) //Setting the Root URL
-                        .build(); //Finally building the adapter
-
-                //Creating object for our interface
-                RegistroAPI api = adapter.create(RegistroAPI.class);
-
-                //Defining the method insertuser of our interface
-                api.coleta(
-
-                        //Passing the values by getting it from editTexts
-                        id_usuario,
-                        endereco,
-                        numerocasa,
-                        complemento,
-                        bairro,
-                        data,
-                        hora,
-                        subCategoria,
-                        caminhoFoto,
-                        qtd,
+                Integer id_usuario = Integer.parseInt(id);
+                Integer numerocasa = Integer.parseInt(numero);
 
 
-                        //Creating an anonymous callback
-                        new Callback<Response>() {
-                            @Override
-                            public void success(Response result , Response response) {
-                                //On success we will read the server's output using bufferedreader
-                                //Creating a bufferedreader object
-                                BufferedReader reader = null;
-
-                                //An string to store output from the server
-                                String output = "";
-
-                                try {
-                                    //Initializing buffered reader
-                                    reader = new BufferedReader(new InputStreamReader(result.getBody().in()));
-
-
-
-                                    //Reading the output in the string
-                                    output = reader.readLine();
-                                } catch (IOException e) {
-                                    e.printStackTrace();
-                                }
-
-                                    //Displaying the output as a toast
-                                    Toast.makeText(AparelhosActivity.this, "Agendamento salvo!", Toast.LENGTH_LONG).show();
-                                Intent agendou = new Intent(AparelhosActivity.this, MenuActivity.class);
-                                startActivity(agendou);
-
-
-                            }
-
-
-
-                            @Override
-                            public void failure(RetrofitError error) {
-                                //If any error occured displaying the error as toast
-                                Toast.makeText(AparelhosActivity.this, error.toString(),Toast.LENGTH_LONG).show();
-                                finish();
-                            }
-                        }
-                );
-
-
-                /*final EditText quantidade = (EditText) findViewById(R.id.agenda_quantidade);
+                final EditText quantidade = (EditText) findViewById(R.id.agenda_quantidade);
                 qtd = quantidade.getText().toString();
 
                 helper = new AgendarHelper(id_usuario,endereco,numerocasa,complemento,bairro,data,hora,subCategoria,caminhoFoto,qtd);
@@ -207,10 +125,10 @@ public class AparelhosActivity extends AppCompatActivity
                 usuarioDAO.close();
 
                 Intent agendou = new Intent(AparelhosActivity.this, MenuActivity.class);
-                startActivity(agendou);*/
+                startActivity(agendou);
 
-                //Toast.makeText(AparelhosActivity.this,"Agedamento Salvo!", Toast.LENGTH_SHORT).show();
-
+                Toast.makeText(AparelhosActivity.this,"Agedamento Salvo!", Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
 

@@ -5,18 +5,18 @@ package br.com.lixoeletronico.lixoeletronico.modelo;
  */
 
 public class Usuario {
-    private String id;
+    private Long id;
     private String nome;
     private String cpf;
     private static String email;
-    private static String senha;
+    private String senha;
     private String confSenha;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
